@@ -1,0 +1,267 @@
+    body,p,span{
+        font-family: 'Roboto', sans-serif;
+
+    }
+    h1,h2,h3,h4,h5,h6,a{
+        font-family: 'Rubik', sans-serif;
+    }
+
+
+   
+   .dropdown-menu{
+        border: none;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0,0, .1);
+        padding: 10px;
+        transform-origin:top center ;
+    }
+    .dropdown-item:hover{
+        background-color: brown !important;
+        color: #fff;
+    }
+    .search{
+        border-right: 1px solid #dadada;
+        margin-left:15px;
+        width: 30px;
+    }
+    .call{
+        width:200px ;
+        margin-left:15px;
+        margin-right:20px;
+    }
+    .call-left i{
+        font-size:25px;
+        margin-top:10px;
+    }
+
+
+    body .btn-danger{
+        font-size:20px ;
+        padding: 10px 20px;
+        position: relative;
+        z-index: 1;
+    }
+    body .btn-danger::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+        transition: all .2s;
+        opacity: 0;
+        visibility: hidden;
+     }
+
+     body .btn-danger:hover::after{
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+     }
+
+     .banner{
+       background: url(https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg) no-repeat top center; 
+       background-size: cover;
+     }
+
+     .banner-social ul li{
+        list-style: none;
+        margin-left: 20px;
+     }
+
+     .banner-content{
+        padding: 200px 0;
+        width: 400px;
+        margin-left:80px ;
+        height: 600px;
+     }
+     .logo{
+        height:200px ;
+        padding: 30px;
+     }
+
+     .about-img{
+        position: relative;
+     }
+     .about-img-text{
+        position: absolute;
+        left:370px;
+        bottom:50px;
+        width:200px;
+        height:200px;
+        background: url(./img/shape.png) no-repeat center;
+        background-size: contain;
+
+     }
+
+     .about-img-text h1{
+        color: brown;
+        font-size: 50px;
+     }
+
+     .about-img-text{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+     }
+
+     .icon-text ul{
+        list-style: none;
+        padding-left: 0;
+
+     }
+
+     .icon-text ul li::before{
+        content: "\f00c";
+        font-family:'Font Awesome 5 free';
+        font-weight: 600;
+        color: brown;
+        font-size: 30px;
+     }
+
+     .icon-text ul li a{
+        color: brown;
+        padding: 10px;
+        font-size:20px ;
+        text-decoration: none;
+     }
+
+     .cards{
+      background-color: rgba(118, 118, 118, 0.2);
+     }
+
+     .card{
+      width: 250px;
+      padding: 80px 10px;
+      border: none;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0,0, .2); 
+      margin:40px 15px;
+      position: relative;
+      overflow: hidden;
+      height:350px ;
+      transition: all .3s;
+     }
+     .card:hover{
+      transform:translateY(-10px);
+     }
+
+     .card i{
+      margin-top:-21px;
+      color: brown;
+      width: 70px;
+      height: 70px ;
+      font-size: 40px;
+      line-height: 70px;
+      border-radius: 50%;
+      background-color:#fff;
+      position: relative;
+      transition: all .3s;
+   
+     }
+
+     .card:hover.card i{
+      background-color: brown;
+      color: #fff;
+     }
+     .circle{
+      width: 240px;
+      height: 240px;
+      line-height:240px;
+      background-color:#fdebeb;
+      border-radius: 50%;
+      position: absolute;
+      top:-140px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+     }
+
+     .play{
+      position: relative;
+     }
+
+     .animation-btn{
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      color: red;
+      font-size:35px;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 80px;
+      position: absolute;
+      right:260px;
+      bottom: 190px;
+     }
+
+     .animation-btn::before{
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: hsla(0, 98%, 65%, 0.897);
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      animation:playbtn 1.6s ease-out Infinite;
+     }
+
+     @keyframes playbtn{
+      0%,30%{
+         transform: scale(0);
+         opacity: 1;
+      }
+      50%{
+         transform: scale(1.5);
+         opacity: .7;
+      }
+
+      100%{
+         transform: scale(2);
+         opacity: 0;
+      }
+     }
+
+
+     .datas ul{
+      list-style: none;
+      position: relative;
+      padding-left: 60px;
+     }
+
+     .datas ul::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 1px;
+      background-color: red;
+      height:calc(100% - 100px);
+     }
+
+     .datas ul li{
+      margin-bottom: 25px;
+      position: relative;
+     }
+
+     .datas ul li::before{
+      content: attr(data-counter); 
+      position: absolute;
+      left: -65px; 
+      top: 0;
+      width: 40px; 
+      height: 40px;
+      line-height: 40px;
+      background-color: #fff;
+      border: 1px solid red; 
+      border-radius: 50%;
+      text-align: center; 
+
+     }
+
+     .froms{
+      background-color: #fdebeb;
+      padding:20px;
+     }
